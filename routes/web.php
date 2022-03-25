@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('accueil');
 });
 
-Route::get('upload', [FileUploadController::class, 'upload']);
+Route::get('upload', [FileUploadController::class, 'index']);
 Route::post('store', [FileUploadController::class, 'store']);
