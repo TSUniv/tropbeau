@@ -15,8 +15,8 @@ use App\Http\Controllers\FileUploadController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('accueil');
 });
 
-Route::get('file-upload', [FileUploadController::class, 'index']);
+Route::get('upload', [FileUploadController::class, 'upload']);
 Route::post('store', [FileUploadController::class, 'store']);
